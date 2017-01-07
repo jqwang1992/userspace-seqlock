@@ -6,7 +6,7 @@
 About seqlock, you can see <a href="https://en.wikipedia.org/wiki/Seqlock">https://en.wikipedia.org/wiki/Seqlock</a>. About memory barrier, there is a paper that is very much to recommend, its name is Memory Barriers:  a Hardware View for Software Hackers and you can get it from <a herf="chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/http://www.rdrop.com/users/paulmck/scalability/paper/whymb.2010.07.23a.pdf">http://www.rdrop.com/users/paulmck/scalability/paper/whymb.2010.07.23a.pdf</a>.
 
 ##Using
-　　Using write lock, you can <font color="blue">put your</font> critical code between <font color="red">write_seqlock(&seqlock)</font> and <font color="blue">write_sequnlock(&seqlock)</font>.
+　　Using write lock, you can put your critical code between <font color=#0099ff>write_seqlock(&seqlock)</font> and write_sequnlock(&seqlock).
 
 　　Using read lock, you can do as follow:<br>
 ```c
