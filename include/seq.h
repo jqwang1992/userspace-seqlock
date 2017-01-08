@@ -1,3 +1,7 @@
+/*
+ * Author : Jianqiang Wang
+ * Mail   : jqwang2015@lzu.edu.cn
+ */
 #ifndef _SEQ_H
 #define _SEQ_H
 #include <pthread.h>
@@ -16,6 +20,12 @@ static __always_inline  void rep_nop(void)
 
 #define ACCESS_ONCE(x) (*(volatile typeof(x)*)&(x))
 
+/*
+ * Before and after critical code, sequence will be add one.
+ * If sequence is odd, it says that wirte critical code isn't executed
+ * completely. So if there is a read code in this case, the data getted
+ * by read is inconsistent.
+ */
 typedef struct {
 	unsigned int sequence;
 	pthread_spinlock_t lock;

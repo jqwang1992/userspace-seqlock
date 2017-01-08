@@ -1,3 +1,7 @@
+/*
+ * Author : Jianqiang Wang
+ * Mail   : jqwang2015@lzu.edu.cn
+ */
 #ifndef _SEQLOCK_H
 #define _SEQLOCK_H
 
