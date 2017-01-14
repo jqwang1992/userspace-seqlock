@@ -1,5 +1,5 @@
 # userspace-seqlock
-　　These files are about implementation of seqlock in userspace.　The most important files about seqlock are include/barrier.h and include/seq.h．　File barrier.h is the implementation in userspace.　File seq.h is the impementation in userspace.
+　　These files are about implementation of seqlock in userspace.　The most important files about seqlock are include/barrier.h and include/seq.h．　File barrier.h is the implementation of memory barrier in userspace.　File seq.h is the impementation of seqlock in userspace.
   
 ##Preparation
 　　If you really want to know about what I do, you should learn what is seqlock and what is memeory barrier firstly.
